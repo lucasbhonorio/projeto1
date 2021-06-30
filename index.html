@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UM-Compatible" content="IE-edge"/>
+    <title>Exemplo de Menu</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet"> <meta name="viewport" content="width-device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    </head>
+<body>
+    <div class="header-top">
+        <img src="./Logo.png"/>
+       <span>
+           Controle financeiro
+       </span>
+
+        <div class="responsive-menu">
+            <div class="icon-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li>X</li>
+                <li>Cadastro de Transações</li>
+                <li>Limpar Dados</li>
+                <li>Salvar no Servidor</li>
+            </ul>
+        </div>
+    </div>
+     <div class="geral"> 
+            <div class="input-body">
+                <div class="campo">
+                    <h4>Nova de transação</h4>
+                    <form>
+                    <div class="seletor">
+                        <label for="choice">Tipo de transação</label>
+                        <select name="choice">
+                            <option value="compra" selected>Compra</option>
+                            <option value="valor2">Valor 2</option>
+                            <option value="valor3">Valor 3</option>
+                        </select>
+                    </div>
+                
+                    <div class="name1">
+                        <label for="name">Nome da mercadoria</label>
+                        <input type="text" id="name" value="Input">    
+                    </div>
+                    <div class="valor">
+                        <label for="valor">Valor</label>        
+                        <input type="text" id="valor" value="R$ 0,00">
+                    </div>
+                    </form> 
+                    <div class="botao">
+                        <button>"Adicionar transação"</button>
+                    </div>
+                </div>
+
+                
+            </div>
+    
+
+    <div class="line">
+        <div></div>
+    </div>
+
+    <div class="container">
+        <h3>Extrato de transações</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <th>.</td>
+                    <th>Mercadoria</td>
+                    <th>valor</td>                    
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td> Lorem ipsum sit amet consectetur</td>
+                    <td> R$ 12.999,00</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Quis nostrud exercitation</td>
+                    <td>99,99</td>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>lore ipsum</td>
+                    <td>9,99</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td></td>
+                    <td>12.909,99</td>
+                </tr>
+                <tr>
+                    <td class="foot"></td>
+                    <td class="foot"></td>
+                    <td class="foot">[LUCRO]</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+</body>
+</html>

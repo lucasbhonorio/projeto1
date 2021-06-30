@@ -1,0 +1,392 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+/* Version Mobile */
+.header-top {
+    background-color: #e0e0e0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-top span {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+}
+.icon-menu div {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+}
+.responsive-menu ul {
+    display: none;
+    list-style: none;
+    background-color: #333;
+    font-size: 16px;
+    color: white;
+    position: fixed;
+    height: 100%;
+    width: 85%;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 20px 0; 
+}
+.responsive-menu ul li {
+    text-align: right;
+    margin: 7px 0;
+    padding: 0px 25px;
+}
+.responsive-menu ul li:nth-child(1){
+    text-align: left;
+}
+
+.responsive-menu ul li:hover{
+    background-color: #c4c4c4;
+    color: #333;
+}
+.responsive-menu ul li:hover:nth-child(1){
+    background-color: #333;
+    color: white;
+}
+.responsive-menu:hover ul {
+    display: block;
+}
+
+.input-body{
+    display:block;
+    font-size: 14px;
+    color: #333; 
+    padding: 0px 20px;
+           
+}
+label {
+    display: block;
+    margin-top: 20px;
+}
+select {
+    width: 100%;
+    height: 34px;
+    color: #888;
+    border: 1px solid #979797;
+    border-radius: 4px;
+}
+input[type="text"] {
+    width: 98%;
+    height: 32px;
+    color: #888;
+    border: 1px solid #979797;
+    border-radius: 4px;
+}
+button {
+    width: 100%;
+    margin-top: 25px;
+    height: 32px;
+    background-color: #333;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+}
+.line div {
+    width: 87%;
+    height: 1px;
+    background-color: #979797;
+    margin: 25px 0 0 20px;
+}
+.container {
+    margin: 20px;
+    font-size: 12px;
+    
+}
+h3 {
+   display: flex ;
+   justify-content: space-around;
+}
+h4 {
+    display: flex ;
+    justify-content: space-around;
+    margin: 20px 0px 0px 0px;
+    
+    }
+
+table {
+    width: 100%;
+}
+
+td {
+    border-top: 1px  solid #979797;
+  
+}
+.foot {
+    border-top: 0px;
+}
+
+.top {
+    text-align: center;
+    font-size: 14px;
+}
+/* Version Tablet */
+
+@media screen and (min-width:544px) { 
+    .header-top {
+        background-color: #e0e0e0;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-top span {
+        color: #333;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .icon-menu div {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+    }
+    .responsive-menu ul {
+        display: none;
+        list-style: none;
+        background-color: #333;
+        font-size: 16px;
+        color: white;
+        position: fixed;
+        height: 100%;
+        width: 85%;
+        right: 0px;
+        top: 0px;
+        margin: 0px;
+        padding: 20px 0; 
+    }
+    .responsive-menu ul li {
+        text-align: right;
+        margin: 7px 0;
+        padding: 0px 25px;
+    }
+    .responsive-menu ul li:nth-child(1){
+        text-align: left;
+    }
+    
+    .responsive-menu ul li:hover{
+        background-color: #c4c4c4;
+        color: #333;
+    }
+    .responsive-menu ul li:hover:nth-child(1){
+        background-color: #333;
+        color: white;
+    }
+    .responsive-menu:hover ul {
+        display: block;
+    }
+    
+    .input-body{
+        font-size: 14px;
+        color: #333; 
+        padding: 20px;   
+        
+    }
+    .campo{
+        padding: 0px 20px;
+        border: 1px solid #333;
+        height: 170px; 
+    }
+    form{
+        display: flex;       
+    }
+    label {
+        display: block;
+        
+    }
+    .seletor{
+        width: 25%;
+        margin-right: 15px;
+        
+    }
+    select {
+        display: block;
+        width: 100%;
+        height: 35px;
+        color: #888;
+        border: 1px solid #979797;
+        border-radius: 4px;
+    }
+    .name1 {
+        width: 50%;
+        margin-right: 15px;
+        
+    }
+    .valor{
+        width: 25%;
+        
+    }
+    input [type="text"] {
+        display: block;
+        height: 32px;
+        color: #888;
+        border: 1px solid #979797;
+        border-radius: 4px;
+    }
+    
+    button {
+        float: right;
+        height: 32px;
+        width: 200px;
+        background-color: #333;
+        border: 0px;
+        margin-top: 15px;
+        border-radius: 4px;
+        color: white;
+    }
+    
+    .line div {
+        width: 92%;
+        height: 1px;
+        background-color: #979797;
+        margin: 25px 0 0 20px;
+    }
+    .container {
+        font-size: 12px;
+        border: 0px;
+        
+        
+    }
+    table {
+        width: 100%;
+    }
+        
+    td {
+        border-top: 1px  solid #979797;
+      
+    }
+    .foot {
+        border-top: 0px;
+    }
+    
+    .top {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+/* Version pc */
+
+@media screen and (min-width:768px) { 
+    .responsive-menu ul {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-color: white;
+        color: #333;
+        width: 350px;
+        height: 40px;
+        font-size: 14px;    
+    }
+    .responsive-menu ul li{
+        border-left: 1px solid #333;
+    }
+    .responsive-menu ul li:nth-child(2){
+        border-left: none;
+    }
+    .responsive-menu ul li:nth-child(1){
+        display: none;
+    }
+   
+    .icon-menu {
+        display: none;
+    }
+    .input-body{
+        font-size: 14px;
+        color: #333; 
+        padding: 20px;   
+        width: 400px;
+    }
+    .campo{
+        border: 1px solid #333;
+        height: 315px; 
+        width: 90%;
+        
+    }
+    form{
+        display: block;       
+    }
+    label {
+        display: block;
+        
+    }
+    .seletor{
+        width: 100%;
+    }
+    select {
+        display: block;
+        width: 100%;
+        height: 35px;
+        color: #888;
+        border: 1px solid #979797;
+        border-radius: 4px;
+    }
+    .name1{
+        width: 100%;
+    }
+    input [type="text"] {
+        display: block;
+        height: 32px;
+        color: #888;
+        border: 1px solid #979797;
+        border-radius: 4px;
+    }
+    .valor {
+        width: 100%;
+    }
+    button {
+        float: right;
+        height: 32px;
+        width: 100%;
+        background-color: #333;
+        border: 0px;
+        margin-top: 15px;
+        border-radius: 4px;
+        color: white;
+    }
+    
+    .line div {
+        display: none;
+        width: 92%;
+        height: 1px;
+        background-color: #979797;
+        margin: 25px 0 0 20px;
+    }
+    .container {
+    
+        font-size: 12px;
+        border: 0px;
+        width: 100%;
+        float: right;
+        
+    }
+    table {
+        width: 100%;
+    }
+        
+    td {
+        border-top: 1px  solid #979797;
+      
+    }
+    .foot {
+        border-top: 0px;
+    }
+    
+    .top {
+        text-align: center;
+        font-size: 14px;
+    }
+    .geral {
+        display: flex;
+    }
+}
