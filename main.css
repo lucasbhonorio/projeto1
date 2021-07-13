@@ -82,6 +82,13 @@ input[type="text"] {
     border: 1px solid #979797;
     border-radius: 4px;
 }
+input[type="number"] {
+    width: 98%;
+    height: 32px;
+    color: #888;
+    border: 1px solid #979797;
+    border-radius: 4px;
+}
 button {
     width: 100%;
     margin-top: 25px;
@@ -92,7 +99,7 @@ button {
     color: white;
 }
 .line div {
-    width: 87%;
+    width: 93%;
     height: 1px;
     background-color: #979797;
     margin: 25px 0 0 20px;
@@ -107,9 +114,9 @@ h3 {
    justify-content: space-around;
 }
 h4 {
-    display: flex ;
+    display: none ;
     justify-content: space-around;
-    margin: 20px 0px 0px 0px;
+   margin: 0px;
     
     }
 
@@ -189,14 +196,22 @@ td {
     .input-body{
         font-size: 14px;
         color: #333; 
-        padding: 20px;   
+        padding: 20px;
+        display: flex; 
         
     }
     .campo{
-        padding: 0px 20px;
+        padding: 20px;
         border: 1px solid #333;
-        height: 170px; 
+        width: 100%;
+        
     }
+    h4 {
+        display: flex ;
+        justify-content: space-around;
+       margin: 0px;
+        
+        }
     form{
         display: flex;       
     }
@@ -226,6 +241,9 @@ td {
         width: 25%;
         
     }
+    .valida{
+        display: inline;
+    }
     input [type="text"] {
         display: block;
         height: 32px;
@@ -246,7 +264,7 @@ td {
     }
     
     .line div {
-        width: 92%;
+        width: 93%;
         height: 1px;
         background-color: #979797;
         margin: 25px 0 0 20px;
@@ -277,7 +295,7 @@ td {
 
 /* Version pc */
 
-@media screen and (min-width:768px) { 
+@media screen and (min-width:769px) { 
     .responsive-menu ul {
         display: flex;
         flex-direction: row;
@@ -290,12 +308,33 @@ td {
     }
     .responsive-menu ul li{
         border-left: 1px solid #333;
+        
     }
     .responsive-menu ul li:nth-child(2){
         border-left: none;
+        
     }
     .responsive-menu ul li:nth-child(1){
         display: none;
+        
+    }
+    .responsive-menu ul li:hover:nth-child(1){
+       display: none;
+       background-color: white;
+    }
+    .responsive-menu:hover ul {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-color: white;
+        color: #333;
+        width: 350px;
+        height: 40px;
+        font-size: 14px;  
+    }
+    .responsive-menu ul li:hover{
+        background-color: white;
+        color: #333;
     }
    
     .icon-menu {
@@ -305,13 +344,13 @@ td {
         font-size: 14px;
         color: #333; 
         padding: 20px;   
-        width: 400px;
+        display: flex;
+        width: 600px;
     }
     .campo{
+        padding: 20px;
         border: 1px solid #333;
-        height: 315px; 
-        width: 90%;
-        
+        width: 100%;
     }
     form{
         display: block;       
@@ -390,3 +429,4 @@ td {
         display: flex;
     }
 }
+
