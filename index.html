@@ -5,9 +5,11 @@
     <meta http-equiv="X-UM-Compatible" content="IE-edge"/>
     <title>Exemplo de Menu</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet"> <meta name="viewport" content="width-device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width-device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-    </head>
+    <script type="text/javascript" src="script.js"></script>
+</head>
 <body>
     <div class="header-top">
         <img src="./Logo.png"/>
@@ -36,44 +38,49 @@
                     <form>
                     <div class="seletor">
                         <label for="choice">Tipo de transação</label>
-                        <select name="choice">
-                            <option value="compra" selected>Compra</option>
-                            <option value="valor2">Valor 2</option>
-                            <option value="valor3">Valor 3</option>
+                        <select name="choice" id="seletor">
+                            <option value="selecione">Selecione...</option>
+                            <option value="compra">Compra</option>
+                            <option value="venda">Venda</option>
                         </select>
+                        <div class="valida" id=divseletor></div>
                     </div>
-                
                     <div class="name1">
                         <label for="name">Nome da mercadoria</label>
-                        <input type="text" id="name" value="Input">    
+                        <input type="text" id="name" placeholder="Input">    
+                        <div class="valida"id=divname></div>
                     </div>
                     <div class="valor">
                         <label for="valor">Valor</label>        
-                        <input type="text" id="valor" value="R$ 0,00">
+                        <input type="number" id="valor" placeholder="R$ 0,00">
+                        <div class="valida" id=divvalor></div>
                     </div>
+                    
                     </form> 
                     <div class="botao">
-                        <button>"Adicionar transação"</button>
+                        <button type="button" onclick="validarForm()">"Adicionar transação"</button>
                     </div>
                 </div>
 
                 
             </div>
     
-
+<div class="container1">
     <div class="line">
         <div></div>
     </div>
-
+</div>
     <div class="container">
         <h3>Extrato de transações</h3>
         <table>
-            <tbody>
+            <thead>
                 <tr>
                     <th>.</td>
                     <th>Mercadoria</td>
                     <th>valor</td>                    
                 </tr>
+            </thead>
+            <tbody>    
                 <tr>
                     <td>+</td>
                     <td> Lorem ipsum sit amet consectetur</td>
@@ -94,14 +101,17 @@
                     <td></td>
                     <td>12.909,99</td>
                 </tr>
+            </tbody>
+            <tfoot>
                 <tr>
                     <td class="foot"></td>
                     <td class="foot"></td>
                     <td class="foot">[LUCRO]</td>
                 </tr>
-            </tbody>
+            </tfoot>
         </table>
     </div>
 </div> 
 </body>
 </html>
+
